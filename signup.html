@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pos-f-t">
+      
+        <nav class="navbar navbar-dark bg-dark h1 text-light">
+           Sign Up Now!
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="form-row">
+            <div class="form-group col-md-6 mt-3">
+                <label for="fname">First name</label>
+                <input type="text" class="form-control" id="fname">
+            </div>
+            <div class="form-group col-md-6 mt-3">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" placeholder="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="phone">phone No</label>
+                <input type="text" class="form-control" id="phone" placeholder="">
+            </div>
+
+
+        </div>
+        <div class="form-group">
+            <label for="address">Address </label>
+            <input type="text" class="form-control" id="address" placeholder="">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="province">Province</label>
+                <select id="province" class="form-control">
+                    <option selected>Select Province</option>
+                    <option>Sindh</option>
+                    <option>Punjab</option>
+                    <option>Balochistan</option>
+                    <option>Khyber Pakhtonkhwa</option>
+
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Agree to our terms and services </label>
+            </div>
+        </div>
+        <button type="submit" onclick="register()" class="btn mb-3 btn-dark">Sign Up</button>
+       <br> <span  >Already have an account?<a class="ml-1" href="index.html">Login Now</a></span>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAJe--m5QyJVtFCqSJrgMUqQalHlBHOO2c",
+            authDomain: "assignment-1d119.firebaseapp.com",
+            databaseURL: "https://assignment-1d119.firebaseio.com",
+            projectId: "assignment-1d119",
+            storageBucket: "assignment-1d119.appspot.com",
+            messagingSenderId: "297123320748",
+            appId: "1:297123320748:web:1e0612fb06b9ec16e4a009"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
